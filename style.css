@@ -1,0 +1,223 @@
+.b{
+  background: #0000;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.b0{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 0.2rem;
+  background: #111;
+  width: 20rem;
+  height: 80vh;
+  max-height: 25rem;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  align-content: center;
+  justify-items: stretch;
+}
+
+.b1{
+  display: grid;
+  background: #222;
+  grid-template-columns: auto 1fr auto;
+  border-radius: 2rem;
+  padding: 0.2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.b11{
+  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: solid 0.2rem #333;
+  align-items: center;
+  justify-items: center;
+}
+
+.b12{
+  display: grid;
+  background: #333;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: Monospace;
+  height: 2rem;
+  border-radius: 2rem;
+  align-items: center;
+  justify-items: center;
+  padding-inline: 1rem;
+}
+
+.b13{
+  display: grid;
+  background: #222;
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: solid 0.2rem #333;
+  align-items: center;
+  justify-items: center;
+}
+
+.b13:active{
+  background: #333;
+  border: solid 0.2rem #444;
+}
+
+.b2{
+  background: #222;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+  align-items: stretch;
+  justify-items: stretch;
+  border-radius: 1rem;
+}
+
+.b20{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 0.2rem;
+  min-height: 10rem;
+}
+
+.b201{
+  display: grid;
+  font-size: 1rem;
+  width: 6rem;
+  height: 6rem;
+  border: solid 0.2rem #555;
+  border-radius: 6rem;
+  align-items: center;
+  justify-items: center;
+}
+ 
+.b21,.b21f,.b21s{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 0.4rem;
+  padding: 0.4rem;
+  justify-items: start;
+}
+
+.b21s{
+  grid-template-columns: 1fr auto;
+  justify-items: end;
+}
+
+.b211{
+  display: grid;
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-items: center;
+  border-radius: 2rem;
+  border: solid 0.2rem #333;
+}
+
+.b212{
+  display: grid;
+  background: #333;
+  font-size: 1rem;
+  font-family: Monospace;
+  min-width: 2rem;
+  max-width: 12rem;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  word-break: break-word;
+  align-items: center;
+}
+
+.b11,.b201,.b211f{
+  background: #222;
+  background-image: url("user1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.b211s{
+  background: #222;
+  background-image: url("user2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.b3{
+  display: grid;
+  background: #222;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1rem;
+  border-radius: 2rem;
+  padding: 0.2rem;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.b31{
+  display: grid;
+  background: #333;
+  height: 2rem;
+  font-family: Monospace;
+  font-size: 1rem;
+  word-break: break-word;
+  color: #fff;
+  overflow-y: scroll;
+  scroll-snap-align: center;
+  scroll-snap-type: y mandatory;
+  border-radius: 2rem;
+  padding-inline: 0.2rem;
+  border: solid 0.2rem #444;
+  align-items: center;
+}
+
+.b31:focus{
+  background: #444;
+  outline: dashed 0.2rem #555;
+  border: solid 0.2rem #333;
+}
+
+.b32{
+  display: grid;
+  background: #222;
+  font-size: 1rem;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: solid 0.2rem #333;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.b32:active{
+  background: #333;
+  border: solid 0.2rem #444;
+}
+
+*{
+  user-select: none;
+  touch-action: pan-x pan-y;
+}
+
+*::-webkit-scrollbar{
+  width: 0.6rem;
+}
+
+*::-webkit-scrollbar-thumb{
+  background: #555;
+  min-height: 1rem;
+  border-radius: 1rem;
+}
